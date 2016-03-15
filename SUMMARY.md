@@ -5,5 +5,5 @@
 * [Arrays and Pointers](arrays_and_pointers.md)
 * [Strings and Pointers](strings_and_pointers.md)
 * [Structures and Pointers](structures_and_pointers.md)
-* Functions and Pointers
+* [Functions and Pointers](functions_and_pointers.md)
 
