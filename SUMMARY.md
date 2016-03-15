@@ -7,5 +7,5 @@
 * [Structures and Pointers](structures_and_pointers.md)
 * [Functions and Pointers](functions_and_pointers.md)
 * [Memory and Pointers](memory_and_pointers.md)
-* Advanced Pointers
+* [Advanced Pointers](advanced_pointers.md)
 
