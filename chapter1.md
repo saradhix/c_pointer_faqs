@@ -21,7 +21,7 @@ sizeof(int **)=4 bytes
 ```
 
 ####What does de-referencing mean ?
-A pointer stores an address in it, and obtaining the value at that address is known as dereferencing the pointer. This is usually done by prepending a “*” before the variable name. The below example prints the value stored in the variable x using pointer p which holds the address of x.
+A pointer stores an address in it. Fetch the value at that address is known as dereferencing the pointer. This is usually done by prepending a * before the variable name. The below example prints the value stored in the variable x using pointer p which holds the address of x.
 ```C
 int x=10;
 int *p=&x;
