@@ -30,14 +30,18 @@ printf(“Address =%x Value at address is %d\n”, p, *p);
 What is a void pointer ?
 A void pointer is a special pointer type which can store the address of any variable type.
 
+```C
 void *vp;
 int x;
 float *y;
-vp=&x;   //vp is storing the address of an integer
+vp=&x;   // vp is storing the address of an integer
 vp=&y;   //vp is storing the address of a pointer variable. 
-When you have a void pointer, which is generic enough to store the address of any variable type, why do I need different pointer types ?
+```
+
+####When you have a void pointer, which is generic enough to store the address of any variable type, why do I need different pointer types ?
 Strictly speaking, we can get away by using a generic pointer and typecasting wherever we need to which makes the program look complex. Consider the below code where you traverse an array of integers using a pointer variable. The second example shows the same using the generic void pointer.
 
+```C
 main()
 {
   int arr[5]={1,2,3,4,5};
@@ -50,10 +54,10 @@ main()
   for(i=0;i<5;i++)
   {
     printf("arr[%d] is %d\n",i,*(p+i));//using integer pointer
-    printf("arr[%d] is %d\n",i,*((int *)ptr+i));//using void 
-pointer
+    printf("arr[%d] is %d\n",i,*((int *)ptr+i));//using void pointer
   }
 }
+```
 What is the size of (*ptr) where ptr is a void pointer ?
 You can not dereference a void pointer, because the compiler does not know the size/type of the variable you are pointing to.
 The below program does not compile.
