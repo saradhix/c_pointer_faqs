@@ -10,7 +10,7 @@ An "&" represents the address of operator. Any variable when preceded with an "&
 ####What is the "value at address" operator ?
 A "*" represents the value at address operator. A pointer variable when preceded with a "*" returns the value stored at the address.
 
-####Why is sizeof(char *) printing it as 4 ? I expect it to be the length of the actual string ?
+#### Why is sizeof(char *) printing it as 4 ? I expect it to be the length of the actual string ?
 sizeof is the compile time operator which gives the size occupied by that variable. Since a pointer holds an address in memory, the data type of it is an unsigned integer, whose size is 4bytes. In general, all pointers are of the same size, irrespective of their types. On a 32bit system
 
 ```C
