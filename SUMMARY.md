@@ -2,4 +2,5 @@
 
 * [Introduction](README.md)
 * [Introduction to Pointers](chapter1.md)
+* Arrays and Pointers
 
