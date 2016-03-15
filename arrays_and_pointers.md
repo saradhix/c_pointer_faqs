@@ -356,8 +356,8 @@ This mistake is common because it is easy to forget that the pointer decay rule 
 
  An example program:
 
-#include <stdio.h>
-#include <stdlib.h>
+\#include <stdio.h>
+\#include <stdlib.h>
 
 main()
 {
