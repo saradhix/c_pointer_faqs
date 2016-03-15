@@ -22,20 +22,21 @@ sizeof(int **)=4 bytes
 
 ####What does de-referencing mean ?
 A pointer stores an address in it, and obtaining the value at that address is known as dereferencing the pointer. This is usually done by prepending a “*” before the variable name. The below example prints the value stored in the variable x using pointer p which holds the address of x.
-
+```C
 int x=10;
 int *p=&x;
 printf(“Address =%x Value at address is %d\n”, p, *p);
+```
 
-What is a void pointer ?
+####What is a void pointer ?
 A void pointer is a special pointer type which can store the address of any variable type.
 
 ```C
 void *vp;
 int x;
 float *y;
-vp=&x;   // vp is storing the address of an integer
-vp=&y;   //vp is storing the address of a pointer variable. 
+vp=&x; // vp stores the address of an integer
+vp=&y; //vp stores the address of a pointer variable. 
 ```
 
 ####When you have a void pointer, which is generic enough to store the address of any variable type, why do I need different pointer types ?
